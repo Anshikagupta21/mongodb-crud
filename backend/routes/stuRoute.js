@@ -2,6 +2,7 @@ const express= require("express");
 const route=express.Router();
 const StuController=require("../controllers/stuControllers");
 
+route.get('/home',StuController.home);
 route.post("/save",StuController.stuSave);
 route.get("/display", StuController.stuDisplay);
 route.get("/updateshow",StuController.stuUpdateshow);

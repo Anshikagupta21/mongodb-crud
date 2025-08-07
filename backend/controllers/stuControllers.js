@@ -57,7 +57,12 @@ const searchData = async (req, res) => {
   console.log(rollno);
   res.send("Result:",Student);
 };
+  
 
+
+const home=(req,res)=>{
+  res.send("okk");
+}
 
 
 
@@ -68,7 +73,8 @@ module.exports = {
     deleteData,
    dataShow,
     editSave,
-    searchData
+    searchData,
+    home
 };
 
 
