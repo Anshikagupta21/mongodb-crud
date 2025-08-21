@@ -51,12 +51,25 @@ const editSave = async (req, res) => {
   res.send(Student);
 };
 
+// const searchData = async (req, res) => {
+//   const { rollno } = req.body;
+//   const Student = await stuModel.find({ rollno: Number(rollno) });
+//   console.log(rollno);
+//   res.send(Student);
+// };
+
 const searchData = async (req, res) => {
-  const { rollno } = req.body;
-  const Student = await stuModel.find({ rollno: Number(rollno) });
-  console.log(rollno);
-  res.send("Result:",Student);
+  const { rollno } = req.body; 
+  const Student = await stuModel.find({ rollno: rollno }); 
+  console.log(rollno); 
+  res.send(Student);
 };
+
+
+
+
+
+
 
 
 

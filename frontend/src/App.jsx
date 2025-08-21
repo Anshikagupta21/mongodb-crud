@@ -1,11 +1,11 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Layout from "./layout"
-import Home from "./pages/home"
+import Home from "./pages/Home"
 
-import Display from "./pages/display"
-import Update from "./pages/update"
-import Search from "./pages/search"
-import Insert from "./pages/insert"
+import Display from "./pages/Display"
+import Update from "./pages/Update"
+import Search from "./pages/Search"
+import Insert from "./pages/Insert"
 import Myedit from "./pages/Myedit"
 
 
